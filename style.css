@@ -1,0 +1,109 @@
+html {
+	background: url(Background-opera-speeddials-community-web-simple-backgrounds.jpg) no-repeat center fixed; 
+	background-size: cover;
+}
+#menu
+{
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   margin: auto;
+   width: 56%;
+}
+#menu li {
+	display: inline;
+	list-style: none;
+
+}
+
+#menu li a {
+   border: 1px solid white;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: bold;
+   font-size: inherit;
+   padding: 15px 20px 15px 20px;
+   text-decoration: none;
+   color:black;
+   margin-left: -5px;
+   /* This is the background used for the animation */
+   background-image: url('image1.jpg');
+   /* Align the background image position to the left of the link */
+   background-position: left;
+   -webkit-transition: all 0.8s ease-in-out;
+   /* Animation with transition in Firefox (No supported Yet) */
+   -moz-transition: all 0.8s ease-in-out;
+   /* Animation with transition in Opera (No supported Yet)*/
+   -o-transition: all 0.8s ease-in-out;
+}
+#menu li a:hover {
+	color: white;
+	/* Align the background image position of the background to the right*/
+	background-position:right;
+}
+/*
+h1 {
+   font: 600 1.5em/1 'Raleway', sans-serif;
+   color: rgba(0,0,0,.5);
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: .5em;
+   position: absolute;
+   top: 0%;
+   width: 100%;
+}*/
+span, span:after {
+   font-weight: 900;
+   color: rgb(59, 59, 63);
+   white-space: nowrap;
+   display: inline-block;
+   position: relative;
+   letter-spacing: .1em;
+   padding: .2em 0 .25em 0;
+}
+span {
+   font-size: 4em;
+   z-index: 100;
+   text-shadow: .04em .04em 0 #9cb8b3;
+}
+.headers {
+   font: 600 1.5em/1 'Raleway', sans-serif;
+   color: rgba(0,0,0,.5);
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: .5em;
+   position: absolute;
+   width: 100%;
+}
+#photoss{
+   margin-left: 7%;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+   float: left;
+   width: 30%;
+   padding: 5px;
+}  
+ /* Clear floats after image containers */
+ .row::after {
+   content: "";
+   width: 50%;
+   margin: 0 auto;
+   clear: both;
+   display: table;
+ }
+ .section{
+  text-align:center;
+ }
+
+/*
+span:after {
+   content: attr(data-shadow-text);
+   color: rgba(0,0,0,.35);
+   text-shadow: none;
+   position: absolute;
+   left: .0875em;
+   top: .0875em;
+   z-index: -1;
+   -webkit-mask-image: url(//f.cl.ly/items/1t1C0W3y040g1J172r3h/mask.png);
+}*/
